@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Week 8 lab</title>
+	  <!-- add the link tag to the style.css which will be in a folder -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<h1 id="congrat"></h1>
+		<!-- add your JavaScript inside the section below -->
+	  <script type="text/javascript">
+			//this is a comment in JS
+			//add 3 examples of JavaScript code
+			var name = prompt("Please enter your name","Enter....");
+			alert("welcome "+ name+"!")
+
+			var cnumber=6;
+       		var number
+       		number=parseInt(prompt("Guess a number between 1-10","enter number.."));
+
+
+		if (number<cnumber){
+        document.write("your number is less than correct number...")
+       	}
+       	else if(number>cnumber){
+        document.write("your number is greater than correct number... ")
+       	}
+       	else{
+        document.write("Congratulation "+name+" your have the correct number!!!")
+       	}
+
+		function disply(cnumber){
+			document.getElementById('congrat').innerHTML = "the correct number is 6 !!";
+		}
+	  </script>
+<br>
+	<button type="button" onclick="disply(cnumber)">Click me to display correct number!!.</button>
+	<!-- this code from w3school -->
+	</body>
+</html>
