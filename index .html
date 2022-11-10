@@ -20,22 +20,22 @@
        		number=parseInt(prompt("Guess a number between 1-10","enter number.."));
 
 
-		if (number<cnumber){
-        document.write("your number is less than correct number...")
-       	}
-       	else if(number>cnumber){
-        document.write("your number is greater than correct number... ")
-       	}
-       	else{
-        document.write("Congratulation "+name+" your have the correct number!!!")
-       	}
+			if (number<cnumber){
+        	document.write("your number is less than correct number...")
+       		}
+			else if(number>cnumber){
+        	document.write("your number is greater than correct number... ")
+       		}
+			else{
+        	document.write("Congratulation "+name+" your have the correct number!!!")
+       		}
 
-		function disply(cnumber){
+			function disply(cnumber){
 			document.getElementById('congrat').innerHTML = "the correct number is 6 !!";
-		}
+			}	
 	  </script>
 <br>
-	<button type="button" onclick="disply(cnumber)">Click me to display correct number!!.</button>
-	<!-- this code from w3school -->
-	</body>
+		<button type="button" onclick="disply(cnumber)">Click me to display correct number!!.</button>
+		<!-- this code from w3school -->
+		</body>
 </html>
